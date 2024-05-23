@@ -1,0 +1,67 @@
+@@include('header.htm')
+
+@@include('blocks/navigation.htm',{"contact":"active"})
+
+@@include('blocks/page-title.htm', { "page-name": "Contact Us", "title": "Get in Touch" })
+
+<!-- contact form start -->
+<section class="contact-form-wrap section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<form id="contact-form" class="contact__form" method="post" action="index.html">
+					<h3 class="text-md mb-4">Contact Form</h3>
+					<div class="form-group">
+						<input name="name" type="text" class="form-control" placeholder="Your Name" required>
+					</div>
+					<div class="form-group">
+						<input name="email" type="email" class="form-control" placeholder="Email Address" required>
+					</div>
+					<div class="form-group-2 mb-4">
+						<textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+					</div>
+					<button class="btn btn-main" name="submit" type="submit">Send Message</button>
+				</form>
+			</div>
+
+			<div class="col-lg-5 col-sm-12">
+				<div class="contact-content pl-lg-5 mt-5 mt-lg-0">
+					<span class="text-muted">We are Professionals</span>
+					<h2 class="mb-5 mt-2">Don’t Hesitate to contact with us for any kind of information</h2>
+
+					<ul class="address-block list-unstyled">
+						<li>
+							<i class="ti-direction mr-3"></i>GF 19, Neelnandan Complex, New VIP Road, Vadodara
+						</li>
+						<li>
+							<i class="ti-email mr-3"></i>Email: info@archivessoftdesign.in
+						</li>
+						<li>
+							<i class="ti-mobile mr-3"></i>Phone:+91 704 3940 123
+						</li>
+					</ul>
+
+					<ul class="social-icons list-inline mt-5">
+						<li class="list-inline-item">
+							<a href="http://www.themefisher.com"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="http://www.themefisher.com"><i class="fab fa-twitter"></i></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="http://www.themefisher.com"><i class="fab fa-linkedin-in"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="google-map">
+	<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.8063488091598!2d73.2180876348877!3d22.3231624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf2f3f3be4f1%3A0x29bfa936feb84b63!2sArchives%20Soft%20Design!5e0!3m2!1sen!2sin!4v1678534525575!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

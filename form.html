@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            
+            }
+        #tr{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <form  onsubmit="event.preventDefault()" id="form">
+        <div class="record">
+            <label>Enter id</label>
+        <input type="text" class="id" ><br>
+        <label>Enter name</label>
+        <input type="text" class="name" ><br>
+        <label>Enter gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br>
+        <label>Email</label>
+        <input type="text" class="email" ><br>
+        <label>Percentage</label>
+        <input type="text" class="perecentage" ><br>
+        </div>
+            
+        <input type="submit" onclick="subm()">
+        </form>
+        <button onclick="views()">View</button><br>
+        <table id="tr">
+            <tr >
+              <th>Id</th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Email</th>
+              <th>Perecentage</th>
+
+            </tr>
+            
+          </table>
+    
+    <div class="res">
+        
+    </div>
+
+
+
+    <script>
+            let idarr=[]
+            let namearr=[]
+            let genderarr=[]
+            let emailarr=[]
+            let Percentagearr=[]
+            function isValidEmail(emails) {
+                let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(emails).toLowerCase());
+                }
+            function subm(){
+                let id=document.querySelector(".id").value
+                let name=document.querySelector(".name").value
+                let gender=document.getElementsByName("gender")
+                let email=document.querySelector(".email").value
+                let Percentage=document.querySelector(".perecentage").value
+                let res=document.querySelector(".res")
+                let pattern = /^[A-Z][A-Z0-9]+[A-Z]$/
+                let result = pattern.test(id)
+                let pattern2 = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                
+                let re=pattern2.test(String(email).toLowerCase());
+                let pattern3= /^[0-9]+%/
+                let re2=pattern3.test(Percentage)
+                let checkedgender;
+                for(i = 0; i < gender.length; i++) {
+                    if(gender[i].checked)
+                    checkedgender=gender[i].value
+                }
+                if(id=="" || name=="" || email=="" || Percentage==""){
+                    alert("Please enter values")
+                    }
+                else if(result==false){
+                    alert("Id should start with captial alphabets followed by numbers and end with Captial alphabets")
+                }
+                else if(re==false){
+                    alert("Enter valid email")
+                }
+                else if(re2==false){
+                    alert("Enter Correct perecentage")
+                }
+                else if(namearr.length===0){
+                        idarr.push(id)
+                        namearr.push(name)
+                        genderarr.push(checkedgender)
+                        emailarr.push(email)
+                        Percentagearr.push(Percentage)
+                }
+                
+                else{
+                    for(let z=0;z<idarr.length;z++){
+                        if (idarr[z]!==id){
+                            idarr.push(id)
+                            namearr.push(name)
+                            genderarr.push(checkedgender)
+                            emailarr.push(email)
+                            Percentagearr.push(Percentage)
+                            console.log(id)
+                    }
+                        else{
+                            alert("Id already taken")   
+                        }
+                }
+                }
+                
+                
+                
+            }
+       
+        function views(){
+            console.log(idarr,emailarr,namearr,genderarr,Percentagearr)
+            let tr=document.getElementById('tr')
+            for(let j=0;j<idarr.length;j++){
+                
+                let trc=document.createElement("tr")
+                trc.innerHTML=`<tr>
+              <td class="idr">${idarr[j]}</td>
+              <td class="namer">${namearr[j]}</td>
+              <td class="genderr">${genderarr[j]}</td>
+              <td class="emailr">${emailarr[j]}</td>
+              <td class="perr">${Percentagearr[j]}</td>
+            </tr>`
+                tr.append(trc)
+                
+        }tr.style.display="inline-block"
+        }
+    </script>
+</body>
+</html>

@@ -1,119 +1,34 @@
-# Megakit By Themefisher
+# Archives Soft Design Website
 
-Megakit is a well-crafted, versatile and unique HTML5 agency template. Its wonderful features can be used to enhance the websites of IT firms, digital agencies, and creative professionals.
+Welcome to the Archives Soft Design website repository! Below are screenshots of different pages of the website.
 
-<!-- demo -->
-## Example Site
+## Header
+The header section showcases the branding and navigation menu of the website.
+![Header](https://github.com/samanuekola/Archives-Soft-Design/assets/170651885/373c122f-3591-44ae-b054-1b21ec568be2)
 
-| [![](screenshots/homepage.png)](https://demo.themefisher.com/megakit/) | [![](screenshots/about.png)](https://demo.themefisher.com/megakit/about.html) | [![](screenshots/service.png)](https://demo.themefisher.com/megakit/service.html) |
-|:---:|:---:|:---:|
-| **Homepage**  | **About**  | **Service**  |
-| [![](screenshots/portfolio.png)](https://demo.themefisher.com/megakit/project.html) | [![](screenshots/blog.png)](https://demo.themefisher.com/megakit/blog-grid.html) | [![](screenshots/contact.png)](https://demo.themefisher.com/megakit/contact.html) |
-| **Portfolio** | **Blogs** | **Contact** |
+## Home Page
+The home page presents an overview of the services or content offered by the website, featuring animations to enhance user experience.
+![Home Page](https://github.com/samanuekola/Archives-Soft-Design/assets/170651885/4c6913cf-68e0-45b1-a3d9-8e22f399f6eb)
 
-👉🏻[View Live Preview](https://demo.themefisher.com/megakit/)
+## About Us Page
+Learn more about Archives Soft Design, its mission, vision, and team on the About Us page.
+![About Us Page](https://github.com/samanuekola/Archives-Soft-Design/assets/170651885/9d8e56b6-c93d-4c16-b3f1-90290ef15d42)
 
-<!-- pages -->
-## Pages
+## Services Page
+Explore the range of services offered by Archives Soft Design on the Services Page.
+![Services Page](https://github.com/samanuekola/Archives-Soft-Design/assets/170651885/8944d57a-ef3d-4857-908a-8527391ca2a8)
 
-* **Homepage**
-* **About**
-* **Services**
-* **Pricing**
-* **Project**
-* **Blog Grid**
-* **Blog Sidebar**
-* **Blog Details**
-* **Contact**
+## Footer
+The footer section contains important links and contact information.
+![Footer](https://github.com/samanuekola/Archives-Soft-Design/assets/170651885/ab37cb6f-7e84-4bab-be12-05cc48f5d624)
 
-<!-- download -->
-## Download And installation
+## Technologies Used
+- **Bootstrap**: Utilized Bootstrap for front-end styling and layout.
+- **Gulp.js**: Leveraged Gulp.js for task automation and workflow enhancement.
+- **Animations**: Animations have been added throughout the website to enhance user engagement.
 
-Download this template from [Github](https://github.com/themefisher/megakit/archive/main.zip)
+## Internship Project
+This project was completed during my internship, where I had the opportunity to apply my skills in web development in a professional setting.
 
-<!-- installation -->
-### Basic Usages
-
-After downloading the template, you can simply edit the HTML and CSS files from the `theme` folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
-
-### Advanced Usage
-
-For advanced usage, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
-
-#### Install prerequisites (once for a machine)
-
-* **Node Installation:** [Install node js](https://nodejs.org/en/download/)
-* **Gulp Installation:** Install gulp globally from your terminal
-
-```
-npm install --global gulp-cli
-```
-
-Or visit the original [Gulp docs](https://gulpjs.com/docs/en/getting-started/quick-start)
-
-#### Local setup
-
-After successfully installing those dependencies, open this theme with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
-
-* Install dependencies
-
-```
-npm install
-```
-
-* Run locally
-
-```
-npm run dev
-```
-
-After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live reload the browser when changes are saved.
-
-#### Production Build
-
-After finishing all the customization, you can create a production build by running this command.
-
-```
-npm run build
-```
-
-Now you get a `theme` folder that has all the changes you have made. you can use this folder as your main theme.
-
-👉🏻 [visit documentation](https://docs.themefisher.com/megakit/)
-
-<!-- reporting issue -->
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the Megakit Template. Please Search [existing issues](https://github.com/themefisher/megakit/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/megakit/issues).
-
-<!-- support -->
-## Technical Support or Questions (Paid)
-
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
-
-<!-- licence -->
-## License
-
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
-
-**Code License:** Released under the [MIT](https://github.com/themefisher/megakit/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
-
-<!-- resources -->
-## Resources
-
-Some third-party plugins that we used to build this template. Please check their license.
-
-* **Bootstrap v4.5**: <https://getbootstrap.com/docs/4.5/getting-started/introduction/>
-* **Jquery v3.5.1**: <https://jquery.com/download/>
-* **Google Fonts**: <http://fonts.google.com/>
-* **Themify Icons**: <https://themify.me/themify-icons>
-* **Animate CSS**: <https://animate.style/>
-* **Magnific Popup**: <https://dimsemenov.com/plugins/magnific-popup/>
-* **Font Awesome Free**: <https://fontawesome.com/>
-* **Counter-Up**: <https://github.com/bfintal/Counter-Up>
-* **Waypoints**: <http://imakewebthings.com/waypoints/>
-* **Slick**: <https://kenwheeler.github.io/slick/>
-# Archives-Soft-Design
+## Live Website
+The website is live and can be accessed at [archivessoftdesign.in](https://archivessoftdesign.in/).
